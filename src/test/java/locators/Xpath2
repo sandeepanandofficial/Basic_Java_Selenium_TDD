@@ -1,0 +1,11 @@
+xpath in a way that if we change the country name than its rating is highlighted
+	-->//span[text()='India']/ancestor::div/following-sibling::div[@class='si-table-data si-rating']
+	
+xpath in a way that it is going to display or highlight only the phones with 4GB RAM
+	-->//span[contains(text(),'4GB RAM')]
+	
+xpath in a way that if we change the country name it should highlight the total number of medals
+	-->(//span[text()='Australia']/ancestor::div/following-sibling::div/child::span[@data-cy='medal-main'])[4]
+
+xpath in a way that if we change the country name it should highlight the total number of gold medals
+	-->(//span[text()='Canada']/ancestor::div/following-sibling::div/child::span[@data-cy='medal-main'])[1]
